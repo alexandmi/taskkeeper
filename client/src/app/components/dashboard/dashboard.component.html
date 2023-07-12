@@ -1,0 +1,12 @@
+<app-add-folder></app-add-folder>
+
+<p class="your-folders-label">Your folders</p>
+
+<section class="now">
+  <div class="folder-name-buttons">
+    <button mat-raised-button color="primary" *ngFor="let folder of folders"
+      routerLink="/folder/{{folder.id}}">
+      {{folder.name}}
+    </button>
+  </div>
+</section>

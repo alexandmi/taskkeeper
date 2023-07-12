@@ -1,0 +1,12 @@
+<mat-accordion>
+  <mat-expansion-panel class="title-expansion" *ngFor="let task of tasks">
+    
+    <mat-expansion-panel-header>
+      <button mat-raised-button color="accent">
+        {{task.title}}</button>
+    </mat-expansion-panel-header>
+    
+    <app-task [currentTask]="task"></app-task>
+  
+  </mat-expansion-panel>
+</mat-accordion>

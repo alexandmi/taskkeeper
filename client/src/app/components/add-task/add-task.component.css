@@ -1,0 +1,12 @@
+.mat-expansion-panel {
+    border: transparent;
+    max-width: 400px;
+}
+
+.same-width{
+    width: 345px;
+}
+
+.expansion-panel {
+    background-color: #bd1c37;
+}
