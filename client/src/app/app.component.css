@@ -1,0 +1,16 @@
+* {
+    background-color: rgb(10, 159, 185);
+}
+
+.your-folders-label {
+    font-size: 35px;
+    font-weight: bold;
+    color: #673AB7;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navbar-brand{
+    text-decoration: none;
+}

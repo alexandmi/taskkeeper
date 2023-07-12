@@ -1,0 +1,10 @@
+.mat-expansion-panel {
+    border: transparent;
+    max-width: 500px;
+    max-height: fit-content;
+    margin: 20px 0px;
+}
+
+.title-expansion{
+    background-color: #673AB7;
+}

@@ -1,0 +1,22 @@
+<mat-expansion-panel class="hide-toggle">
+	
+	<mat-expansion-panel-header>
+	  <mat-panel-title>
+		<button mat-raised-button color="accent">New Folder</button>
+	  </mat-panel-title>
+	</mat-expansion-panel-header>
+
+	<mat-form-field class="form-group">
+		<mat-label>Folder name</mat-label>
+		<textarea matInput 
+		cdkTextareaAutosize
+		#autosize="cdkTextareaAutosize"
+		cdkAutosizeMinRows="1"
+		cdkAutosizeMaxRows="3"[(ngModel)]="folder.name"></textarea>
+	</mat-form-field>
+
+
+	<div class="example-button-row">
+		<button mat-raised-button color="primary" (click)="saveFolder()">Submit</button>
+	</div>
+</mat-expansion-panel>

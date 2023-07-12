@@ -1,0 +1,26 @@
+<mat-form-field class="same-width">
+    <mat-label>Title</mat-label>
+    <textarea matInput 
+        cdkTextareaAutosize
+        #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="1"
+        cdkAutosizeMaxRows="3" 
+        [(ngModel)]="tempTitle"></textarea>
+</mat-form-field> 
+
+<mat-form-field class="same-width">
+    <mat-label>Description</mat-label>
+    <textarea matInput 
+        cdkTextareaAutosize
+        #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="1"
+        cdkAutosizeMaxRows="5"
+        [(ngModel)]="tempDescription"></textarea>
+</mat-form-field>
+
+<section>
+    <div class="example-button-row">
+        <button mat-raised-button color="accent" (click)="updateTask()">Submit</button>
+        <app-delete-button [name]="currentTask.title" [task]="this.currentTask"></app-delete-button>
+    </div>
+</section>

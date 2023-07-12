@@ -1,0 +1,13 @@
+<div class="folder-content">
+    <mat-form-field class="folder-name-editable">
+        <input matInput type="text" cdkMonitorSubtreeFocus
+                (cdkFocusChange)="checkForNameUpdate()" [(ngModel)]="folder.name">
+    </mat-form-field>
+
+    <app-add-task [folder]="folder"></app-add-task>
+
+    <p class="task-list-label">Task List</p>
+    <app-task-list [tasks]="taskList"></app-task-list>
+
+    <app-delete-button [name]="folder.name" [folder]="this.folder"></app-delete-button>
+</div>

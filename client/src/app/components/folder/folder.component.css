@@ -1,0 +1,15 @@
+.folder-content{
+    margin-left: 20px;
+}
+
+.folder-name-editable{
+    margin-top: 30px;
+}
+
+.task-list-label{
+    font-size: 25px;
+    font-weight: bold;
+    color: #673AB7;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-top: 20px;
+}
