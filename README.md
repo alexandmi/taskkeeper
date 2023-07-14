@@ -4,10 +4,11 @@ A simple web application that uses Angular, Spring Boot and a MySQL database to 
 <p align="center">
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/index.png?raw=true"/>
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/folder.png?raw=true"/>
-</p>
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/open-task.png?raw=true"/>
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/add-task.png?raw=true"/>
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/delete-task.png?raw=true"/>
+</p>
+
 
 ## MySQL configuration
 
