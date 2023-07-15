@@ -81,6 +81,7 @@ The connectivity of the client's components is shown below:
 </p>
 
 ## Database entities diagram
+There are only two entities with a one-to-many relationship:
 <p align="center">
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/db-entities.png?raw=true"/>
 </p>
