@@ -23,8 +23,9 @@ In [server/src/main/resources/application.properties](https://github.com/alexand
 You must change the password to the one you have set for your mysql root user, or for whatever user you want to use. You can also change the database name to whatever you like, provided that you create a database with that name in mysql before you run the server, as explained below.
 
 ## Run the application
- 
+  
 **1. Create the database**
+  
 Log in to your mysql root user. If you want to start with an empty database, just create a database named test01:
 	
 	create database test01;
@@ -36,17 +37,19 @@ If you want to start with some already created tasks, download the dummyTasks.sq
 where /absolute/path/ is the path in your system you saved the file.
 
 **2. Run the server**
+  
 Go to the server folder and run:
 
 	mvn spring-boot:run
 
 **3. Run the client**
+  
 Go to the client folder and run:
 
 	ng serve --port 8081
 
 **4. Open the website**
-
+  
 Open your browser and  go to [https://localhost:8081](https://localhost:8081)
 
 ## Server APIs
