@@ -50,7 +50,7 @@ Go to the client folder and run:
 
 **4. Open the website**
   
-Open your browser and  go to [https://localhost:8081](https://localhost:8081)
+Open your browser and  go to [http://localhost:8081](http://localhost:8081)
 
 ## Server APIs
 The APIs provided are for simple CRUD operations.
