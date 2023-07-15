@@ -1,4 +1,4 @@
-# taskkeeper
+# TasKKeeper
 
 TasKKeeper is a simple web application that saves and organizes tasks. You can create thematic folders, and tasks inside the folders. Each folder has a name, and each task consists of a title and a description. The names, the titles and the descriptions are editable. You can also delete the folders and the tasks you made.
 It is made with Angular, Spring Boot and a MySQL database.
