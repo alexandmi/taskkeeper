@@ -63,7 +63,7 @@ The APIs provided are for simple CRUD operations.
 | GET 	| ```/api/folders/:id```	 | retrieve a folder by id|
 | POST	| ```/api/folders```	 | create a new folder |
 | PUT	| ```/api/folders/:id```	 | update a folder by id |
-| DELETE	|	```/api/folders/:id	```	 | delete a folder by id|
+| DELETE | ```/api/folders/:id```	 | delete a folder by id|
 
 **Task entity APIs:**
 
@@ -71,9 +71,9 @@ The APIs provided are for simple CRUD operations.
 | ---------------	| ------------------ | ------------------ |
 | GET|	```/api/tasks```	|	retrieve all tasks|
 | GET|	```/api/tasks/:id```	|	retrieve a task by id|
-|POST	| /api/tasks	|	create a new task|
-|PUT|	/api/tasks/:id	|	update a task by id|
-|DELETE	|/api/tasks/:id	|	delete a task|
+|POST	| ```/api/tasks```	|	create a new task|
+|PUT|	```/api/tasks/:id```	|	update a task by id|
+|DELETE	|```/api/tasks/:id```	|	delete a task|
 
 
 ## Angular components diagram
