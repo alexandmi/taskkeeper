@@ -1,12 +1,14 @@
 # taskkeeper
-A simple web application that uses Angular, Spring Boot and a MySQL database to save and organize your tasks.
+
+TasKKeeper is a simple web application that saves and organizes tasks. You can create thematic folders, and tasks inside the folders. Each folder has a name, and each task consists of a title and a description. The names, the titles and the descriptions are editable. You can also delete the folders and the tasks you made.
+It is made with Angular, Spring Boot and a MySQL database.
+
+## Screenshots
 
 <p align="center">
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/index.png?raw=true"/>
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/folder.png?raw=true"/>
   <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/open-task.png?raw=true"/>
-  <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/add-task.png?raw=true"/>
-  <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/delete-task.png?raw=true"/>
 </p>
 
 
@@ -22,7 +24,7 @@ You must change the password to the one you have set for your mysql root user, o
 
 ## Run the application
  
-### Create the database
+**1. Create the database**
 Log in to your mysql root user. If you want to start with an empty database, just create a database named test01:
 	
 	create database test01;
@@ -33,16 +35,52 @@ If you want to start with some already created tasks, download the dummyTasks.sq
 
 where /absolute/path/ is the path in your system you saved the file.
 
-### Run the server
+**2. Run the server**
 Go to the server folder and run:
 
 	mvn spring-boot:run
 
-### Run the client
+**3. Run the client**
 Go to the client folder and run:
 
 	ng serve --port 8081
 
-### Open the website
+**4. Open the website**
 
-Open your browser and  go to [http://localhost:8081](http://localhost:8081)
+Open your browser and  go to [https://localhost:8081](https://localhost:8081)
+
+## Server APIs
+The APIs provided are for simple CRUD operations.
+
+**Folder entity APIs:**
+
+| Method 	| URL | Action |
+| ---------------	| ------------------ | ------------------ |
+| GET 	| ```/api/folders``` 	 | retrieve all folders |
+| GET 	| ```/api/folders/:id```	 | retrieve a folder by id|
+| POST	| ```/api/folders```	 | create a new folder |
+| PUT	| ```/api/folders/:id```	 | update a folder by id |
+| DELETE	|	```/api/folders/:id	```	 | delete a folder by id|
+
+**Task entity APIs:**
+
+| Method 	| URL | Action |
+| ---------------	| ------------------ | ------------------ |
+| GET|	```/api/tasks```	|	retrieve all tasks|
+| GET|	```/api/tasks/:id```	|	retrieve a task by id|
+|POST	| /api/tasks	|	create a new task|
+|PUT|	/api/tasks/:id	|	update a task by id|
+|DELETE	|/api/tasks/:id	|	delete a task|
+
+
+## Angular components diagram
+
+The connectivity of the client's components is shown below:
+<p align="center">
+  <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/components-diagram.png?raw=true"/>
+</p>
+
+## Database entities diagram
+<p align="center">
+  <img src="https://github.com/alexandmi/taskkeeper/blob/main/screenshots/db-entities.png?raw=true"/>
+</p>
