@@ -45,4 +45,4 @@ Go to the client folder and run:
 
 ### Open the website
 
-Open your browser and  go to [https://localhost:8081](https://www.google.com)
+Open your browser and  go to [https://localhost:8081](https://localhost:8081)
